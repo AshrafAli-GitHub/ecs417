@@ -1,0 +1,94 @@
+/*Changed the font of all texts*/
+body, div, span, h1, h2, h3, h4, h5, h6, p, hr, a, ul, ol, li, figcaption {
+	font-family: arial, verdana, sans-serif;
+
+}
+
+/*All Headers*/
+h1, h2, h3, h4, h5, h6{
+	padding-left: 1%;
+	font-weight: bold;
+}
+
+h1{
+	color: #6Af;
+	background-color: gray;
+	font-size: 2.5em
+}
+
+h2{
+	background-color: lightgray;
+	font-size: 2em
+}
+
+h3{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	font-size: 1.75em
+}
+
+h4{
+	font-size: 1.25em
+}
+
+h2, h3, h4{
+	color: blue;
+}
+
+p{
+	margin: .5% 1%;
+	font-size: 1em;
+	color: black;
+}
+
+a{
+	color: gold;
+}
+
+a:hover {
+	color: black;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+#navbar ul {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	overflow: hidden;
+	list-style-type: none;
+	background-color: #888;
+}
+
+#navbar li {
+	float: left;
+	text-align: center;
+	padding: 1%;
+}
+
+#navbar a {
+	display: block;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5em;
+	padding-right: 2em;
+}
+
+#navbar a:hover{
+	background-color: #333;
+	color: white;
+}
+
+footer{
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 2em;
+	margin-bottom: 0%;
+}
+
+footer p{
+	color: white;
+}
