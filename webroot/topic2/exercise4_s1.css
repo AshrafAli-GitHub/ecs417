@@ -4,6 +4,12 @@ body, div, span, h1, h2, h3, h4, h5, h6, p, hr, a, ul, ol, li, figcaption {
 
 }
 
+
+body{
+	background-color: lightgreen;
+	padding: 0% 2%;
+}
+
 /*All Headers*/
 h1, h2, h3, h4, h5, h6{
 	padding-left: 1%;
@@ -41,8 +47,9 @@ p{
 	color: black;
 }
 
+/*Links*/
 a{
-	color: gold;
+	color: blue;
 }
 
 a:hover {
@@ -53,6 +60,7 @@ figcaption {
 	font-style: italic;
 }
 
+/*Changes to Navbar*/
 #navbar ul {
 	margin-top: 1%;
 	margin-bottom: 1%;
