@@ -1,0 +1,50 @@
+table {
+	display: table;
+	border: 0.1em solid black;
+	font-family: sans-serif;
+	border-spacing: 0.2em;
+}
+
+caption {
+	background-color: darkred;
+	color: white;
+	font-weight: bold;
+	font-size: 2em;
+
+}
+
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+}
+
+thead tr {
+	display: table-row;
+	font-weight: bold;
+}
+
+th {
+	display: table-cell;
+	vertical-align: inherit;
+	text-align: center;
+	background-color: lightgray;
+	border: solid thin black;
+	padding: 0.5em;
+
+}
+
+td {
+	display: table-cell;
+	vertical-align: inherit;
+	text-align: center;
+	border: solid black thin;
+	padding: 0em 1em;
+}
+
+figure{
+	border: thin black solid;
+}
+
+img{
+	border-radius: 10pt;
+}
