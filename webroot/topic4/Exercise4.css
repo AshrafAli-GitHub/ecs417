@@ -1,0 +1,41 @@
+.form{
+	font-family: sans-serif;
+	margin: 1% 25% 10% 25%;
+	background-color: #BFFFAD;
+}
+
+label{
+	display: block;
+	padding:.5% 0%;
+}
+
+.main fieldset{
+
+	margin: 1% .5% 1% .5%;
+}
+legend{
+	text-align: center;
+	font-weight: bold;
+	background-color: darkgreen;
+	color: white;
+	padding: 1% 40%;
+}
+
+.submission{
+	background-color: white;
+	text-align: center;
+}
+
+.submission input{
+	border: none;
+	padding: 0.2em 1em;
+	background-color: green;
+	color: white;
+	border-radius: 10%;
+	margin: 0 1em;
+}
+
+[type="checkbox"]
+{
+	vertical-align: middle;
+}

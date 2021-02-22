@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="reset2.css">
+		<link rel="stylesheet" href="Exercise4.css">
+		<title>Week 4 - Exercise 4</title>
+	</head>
+
+	<body>
+		<form class="form" method="GET" action="http://webprojects.eecs.qmul.ac.uk/un300/week4/week4_process.php">
+			<fieldset class="main">
+				<legend>Shirt Order Form</legend>
+				<fieldset class="type">
+				<p>
+					<label>Shirt Size</label>
+					<select name="Shirt Size">
+						<option>XS</option>
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+					</select>
+				</p>
+				<p>
+					<label>Sleeves</label><br>
+					<input type="radio" name="sleeves" value="short" checked>Short<br>
+					<input type="radio" name="sleeves" value="long">Long<br>
+				</p>
+				<p>
+					<label>Choose Shirt Colour</label>
+					<input type="color" name="colorChoice">
+				</p>
+				<p>
+					<label>Quantity</label>
+					<input type="range" value="1" min="1" max="10" step="1" name="Quantity" oninput="this.nextElementSibling.value = this.value">
+					<output>1</output>
+				</p>
+				<p>
+					<label>Date Required</label>
+					<input type="date" name="Date Required">
+				</p>
+				</fieldset>
+
+				<fieldset>
+					<p>
+						<label>Name</label>
+						<input type="text" name="Name" placeholder="Enter your name">
+					</p>
+					<p>
+						<label>Email</label>
+						<input type="email" name="Email" placeholder="Enter your email address">
+					</p>
+					<p>
+						<label>Telephone Number</label>
+						<input type="text" name="Telephone" pattern="\d{2}[\-]\d{3}[\-]\d{3}[\-]\d{4}" placeholder="44-207-882-1234">
+					</p>
+				</fieldset>
+
+				<fieldset>
+					<p>
+						<label>Address</label>
+						<input type="text" name="Address" placeholder="Enter your address">
+					</p>
+					<p>
+						<label>City</label>
+						<input type="text" name="City" list="Cities" placeholder="Choose your city">
+						<datalist id="Cities">
+							<option>London</option>
+							<option>Birmignham</option>
+							<option>Manchester</option>
+							<option>Leeds</option>
+						</datalist>
+					</p>
+					<p>
+						<label>Postcode</label>
+						<input type="text" name="Postcode" placeholder="Enter your postcode">
+					</p>
+				</fieldset>
+
+				<div class="submission">
+					<p>
+						<label>Please keep me informed about future shirt designs
+							<input type="checkbox" name="accept">
+						</label>
+					</p>
+					<p class="buttons">
+						<input type="submit">
+						<input type="reset">
+					</p>
+				</div>
+
+			</fieldset>
+
+		</form>
+	</body>
+</html>
