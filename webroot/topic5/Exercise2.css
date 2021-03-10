@@ -1,0 +1,152 @@
+header, nav, aside, ul, h1, h2, figure, p, footer, div{
+	font-family: sans-serif;
+}
+
+h1{
+	float: left;
+	font-size: 2em;
+	padding: 0% 1% 0% 1%;
+}
+
+.header{
+	background-color: #a4ec9c;
+}
+
+h2{
+	font-size: 1.25em;
+	padding: 1% 1% 1% 0%;
+}
+p, ul, li figcaption{
+	font-size: 1em;
+}
+.main{
+	margin-left: 15em;
+	margin-right: 15em;
+}
+
+.navbar ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0.875rem 1rem;
+
+}
+
+.navbar a:hover {
+	background-color: #111;
+	color: #a4ec9c;
+}
+
+
+.right {
+	float: right;
+	width: 15em;
+}
+
+
+.left{
+	float: left;
+	width: 15em;
+}
+
+.Interests{
+	margin: 0.5em 0em 1em 0;
+	padding-left: .8em;
+	padding-bottom: .8em;
+	background-color: #edebe2;
+	color: #8b8669;
+}
+
+h2#Interests{
+	color: #9f9c83;
+	padding-bottom: .5em;
+}
+
+.Sidenav{
+	padding-left: 0.8em;
+	padding-bottom: .8em;
+	padding-top: .8em;
+
+	background-color: #f5f5f5;
+}
+
+
+.Skills{
+	background-color: #f5f5f5;
+	width: 15em;
+	padding-bottom: .2em;
+}
+
+h2#Skills{
+	text-align: center;
+	background-color: #a6eb99;
+	margin: 0.5em 0em 0.8em 0em;
+	padding: .5em;
+}
+
+.pic {
+	border-bottom: 10px;
+	float: left;
+}
+.Skills p{
+	margin-bottom: 4em;
+}
+
+.Education figure{
+	margin: 0;
+	padding: 0.5%;
+	float: right;
+
+}
+
+.Hobbies{
+	background-color: #f5f5f5;
+	width: 15em;
+	margin-right: 0.8em;
+}
+h2#Hobbies{
+	text-align: center;
+	background-color: #a6eb99;
+	margin: 0.5em 0.8em 0.8em 0em;
+	padding: .5em;
+}
+
+.Hobbies ul li{
+	text-align: center;
+	background: white;
+	padding: 0.5em;
+	margin-right: 0.8;
+}
+
+.Movies{
+	background-color: #f5f5f5;
+	width: 15em;
+	margin-right: 0.8em;
+}
+h2#Movies{
+	text-align: center;
+	background-color: #a6eb99;
+	margin: 0.5em 0.8em 0.8em 0em;
+	padding: .5em;
+}
+
+.Movies ul li{
+	text-align: center;
+	background: white;
+	padding: 0.5em;
+	margin-right: 0.8;
+}
+
+.main{
+	padding: 0em 10em;
+	line-height: 1.5em;
+}
