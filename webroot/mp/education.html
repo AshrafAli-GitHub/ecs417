@@ -1,0 +1,100 @@
+<!-- Loads the homepage for the website -->
+<!-- REQUIREMENTS
+1. Use HTML semantic structure. <header>, <hgroup>, <nav>, <article>, ...
+2. For login and addpost, create the required forms with HTML5 elements and allign elements.
+3. Use HTML5 elements that allow validation of the fields within the form for login. Two forms needed.(TOPIC 4)
+	One form for login and another to capture blog entry.
+	ONLY HTML VALIDATION FOR PHASE 1.
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<title>Education - Mohamed Ashraf Ali</title>
+	</head>
+
+	<body>
+		<div class="content-wrap">
+
+			<header>
+				<hgroup>
+					<nav class="navbar">
+						<ul class="navbar_list">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="skills.html">About Me</a></li>
+							<li><a href="skills.html#Skills">Skills</a></li>
+							<li class="current"><a href="education.html">Education</a></li>
+							<li class="current"><a href="#Experience">Experience</a></li>
+							<li class="current"><a href="#Portfolio">Portfolio</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</nav>
+				</hgroup>
+			</header>
+
+			<div class="container">
+				<h1 id="Education">Education</h1>
+				<div class="timeline-container">
+					<div class="timeline">
+						<ul>
+							<li>
+								<div class="timeline-content">
+									<h2>Highbury Grove School</h2>
+									<p>2013-2018</p>
+									<p>8 GCSEs ranging from 9 to B.</p>
+								</div>
+							</li>
+							<li>
+								<div class="timeline-content">
+									<h2>Woodhouse College</h2>
+									<p>2018-2020</p>
+									<p>A in Maths, B in Computer Science and Physics. </p>
+								</div>
+							</li>
+							<li>
+								<div class="timeline-content">
+									<h2>Queen Mary University</h2>
+									<p>2020-</p>
+									<p>Curerent modules: Object Orientated Programming, Web Technology, Automata And Formal Languages, and Information System Analysis</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<section id="Experience">
+				<div class="container">
+					<h1>Experience</h1>
+					<ul id="main-ul">
+						<li>BrightNetwork Internship Experience</li>
+						<ul id="nested-ul">
+							<li><a href="https://www.brightnetwork.co.uk/certificates/technology-internship-experien_ii9wtmrr7imhzx/" target="_blank">Link to my certificate</a></li>
+							<li>Completed a sofware planning project.</li>
+							<li>Attended talks by employees at Google, Amazon, Vodafone, and others.</li>
+						</ul>
+						<li>Attended lecture by Thales about the Four Line Modernisation project for the London Underground.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="Portfolio">
+				<div class="container">
+					<h1>Portfolio</h1>
+					<p>I am currently working on a vehicle simulation game for object orientated coursework.</p>
+					<figcaption>
+						<img src="img\code.png" alt="">
+					</figcaption>
+				</div>
+			</section>
+
+			<footer>
+				<p>Mohamed Ashraf Ali - Portfolio</p>
+			</footer>
+		</div>
+	</body>
+</html>

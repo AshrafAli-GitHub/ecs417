@@ -1,0 +1,28 @@
+html, body, div, ul, ol, li, a, img, span, p, b, input, label {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+ul,ol {
+	list-style:none;
+}
+
+a {
+	text-decoration: none;
+}
+
+button{
+	border: 0;
+}
+
+table {
+	border-spacing:0;
+	border-collapse:collapse;
+}
