@@ -1,4 +1,7 @@
-/* TODO: 19+ styles */
+<?php
+header('Content-type: text/css; charset: UTF-8');
+?>
+
 body, textarea{
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.5em;
@@ -121,8 +124,6 @@ figcaption{
 	padding-top: 1.2em;
 	background-color: #0888a8;
 }
-
-
 
 #Skills h2{
 	text-align: center;
@@ -300,6 +301,39 @@ textarea{
 	margin-top: 1rem;
 	padding-left: 5rem;
 	padding-right: 5rem;
+}
+
+/* Changes to Blog Entry */
+
+.blogEntry h2{
+	text-align: center;
+}
+.blogEntry p{
+	padding: .5rem;
+}
+
+#dt{
+	float: right;
+}
+
+.addPost {
+	padding-bottom: 1rem;
+}
+
+.addPost p{
+	text-align: center;
+	font-size: 1.5rem;
+
+}
+
+#blogLink{
+	color: #0888A8;
+	text-allign: center;
+}
+
+/* Change to month in viewBlog */
+.select_month{
+	
 }
 
 /* Changes to footer */
