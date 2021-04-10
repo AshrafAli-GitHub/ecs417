@@ -331,9 +331,8 @@ textarea{
 	text-allign: center;
 }
 
-/* Change to month in viewBlog */
-.select_month{
-	
+#close_link{
+	color: #0888A8;
 }
 
 /* Changes to footer */

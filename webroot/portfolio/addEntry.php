@@ -47,7 +47,8 @@
 					<form name="blogpost" method="post">
 						<input type="text" name="title" class="title" id="title" placeholder="Title">
 						<textarea name="message" id="message" rows="20" cols="80" placeholder="Enter text"></textarea>
-						<button type="submit" name="submit" onclick="validateForm(event)" class="blog_btn">Post</button>
+						<button type="submit" name="submit" class="blog_btn" onclick="validateForm(event)">Post</button>
+						<button  name="preview" class="blog_btn" onclick="formPreview(this.form)">Preview</button>
 						<button  class="blog_btn" onclick="return clearBtn()">Clear</button>
 					</form>
 				</div>
@@ -58,6 +59,7 @@
 				<p>Mohamed Ashraf Ali - Portfolio</p>
 			</footer>
 	</body>
+	
 	<script type="text/javascript">
 		function validateForm(event) {
 			if(document.getElementById("title").value == ''){
@@ -70,6 +72,12 @@
 				document.getElementById("message").style.border = "1px solid red";
 				event.preventDefault();
 			}
+		}
+
+		function formPreview(form){
+			form.target = '_blank';
+			form.action = 'preview.php'
+			form.submit();
 		}
 
 		function clearBtn(){

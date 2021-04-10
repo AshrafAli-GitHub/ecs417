@@ -63,7 +63,7 @@
 
 							for ($i = 0; $i < $length; $i++){
 								for($j = 1; $j < $length; $j++){
-									if($data[$j - 1]['id'] < $data[$j]['id']){
+									if($data[$j - 1]['dt'] < $data[$j]['dt']){
 										$temp = $data[$j - 1];
 										$data[$j - 1] = $data[$j];
 										$data[$j] = $temp;
@@ -74,29 +74,14 @@
 						}
 
 						$sortedData = bubbleSort($data);
-					?>
 
-						<select class='select_month' name='months'>
-							<option value ='All' selected='selected' disabled="">Showing All Months </option>
+						$months = array();
+						foreach($sortedData as $data){
+							$SQLdt = $data["dt"];
+							$time = strtotime($SQLdt);
 
-							<?php
-							$months = array();
-							foreach($sortedData as $data){
-								$SQLdt = $data["dt"];
-								$time = strtotime($SQLdt);
-								$month_name = date('F', $time);
+						}
 
-								if(!in_array($month_name, $months)){
-									array_push($months, $month_name);
-								}
-							}
-
-							foreach($months as $month){
-								echo "<option value='$month'>$month</option>";
-							}
-							?>
-						</select>
-						<?php
 						// Print each blog post from DB.
 						foreach($sortedData as $data){
 							$SQLdt = $data["dt"];
@@ -105,7 +90,7 @@
 							$timeFormatted = date('jS F Y, G:i', $time);
 
 							echo "<h2>". $data["title"] ."</h2>";
-							echo "<p id='dt'>". $timeFormatted ."</p>";
+							echo "<p id='dt'>". $timeFormatted ." UTC</p>";
 							echo "<br>";
 							echo "<br>";
 
