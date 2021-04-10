@@ -327,12 +327,32 @@ textarea{
 }
 
 #blogLink{
+	display: block;
 	color: #0888A8;
-	text-allign: center;
+	text-align: center;
 }
 
 #close_link{
 	color: #0888A8;
+}
+
+#comment-box{
+	vertical-align: center;
+	left: 0%;
+	margin-bottom: 1.25rem;
+
+}
+
+.submitComment_btn{
+	position: relative;
+
+	background-color: #0888A8;
+	color: #fff;
+	float: left;
+	height: 1.9rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+
 }
 
 /* Changes to footer */

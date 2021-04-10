@@ -23,8 +23,8 @@
 							<li><a href="skills.html">About Me</a></li>
 							<li><a href="skills.html#Skills">Skills</a></li>
 							<li><a href="education.html">Education</a></li>
-							<li><a href="#Experience">Experience</a></li>
-							<li><a href="#Portfolio">Portfolio</a></li>
+							<li><a href="education.html#Experience">Experience</a></li>
+							<li><a href="education.html#Portfolio">Portfolio</a></li>
 							<li><a href="contact.html">Contact</a></li>
 							<li class="current"><a href="viewBlog.php">Blog</a></li>
 						</ul>
@@ -59,8 +59,6 @@
 						function bubbleSort($data){
 							$length = count($data);
 
-							$temp = 0;
-
 							for ($i = 0; $i < $length; $i++){
 								for($j = 1; $j < $length; $j++){
 									if($data[$j - 1]['dt'] < $data[$j]['dt']){
@@ -85,6 +83,7 @@
 						// Print each blog post from DB.
 						foreach($sortedData as $data){
 							$SQLdt = $data["dt"];
+
 							// Change time to different format
 							$time = strtotime($SQLdt);
 							$timeFormatted = date('jS F Y, G:i', $time);
@@ -102,19 +101,25 @@
 							<p>
 								<?php
 								if (isset($_SESSION['email'])){
-									echo '<a id="blogLink" href="addEntry.php">Create a blog post</a>';
-									echo '<br>';
-									echo '<br>';
-									echo '<a id="blogLink" href="logout.php">Logout</a>';
-								}
-								else{
+								?>
 
+									<a id="blogLink" href="addEntry.php">Create a blog post</a>
+									<br>
+									<br>
+							<form method="post">
+								<textarea name="commentArea"  cols="185" rows="3" placeholder="Add a comment..." id="comment-box"></textarea>
+								<button name="submitC" type="submit" class="submitComment_btn" id="addComment">Send</button>
+							</form>
+
+									<a id="blogLink" href="logout.php">Logout</a>
+								<?php }
+								else{
 									echo '<a id="blogLink" href="index.php">Login to create a blog post</a>';
 								}
-							  ?>
-						</p>
+								?>
 
-					 </div>
+						</p>
+					</div>
 				 </div>
 			 </div>
 			 <footer>

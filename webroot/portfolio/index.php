@@ -60,7 +60,7 @@
 			<aside id="login">
 				<div class="container">
 					<h3>Login to the blog</h3>
-					<form name"login" method="post">
+					<form name=login" method="post">
 						<input name ="email" type="email" placeholder="Enter Email">
 						<input name="password" type="password" placeholder="Enter Password">
 						<button nametype="submit" name="submit" type="submit" value="submit" class="submit_btn">Enter</button>
