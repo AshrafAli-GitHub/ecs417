@@ -1,9 +1,14 @@
 <!-- Phase 2 -->
 <!-- Adds a new post to a simple table within a MySQL database and redirects to viewBlog.php. -->
 <?php
-session_start();
+	session_start();
+	$dbhost = getenv("MYSQL_SERVICE_HOST");
+	$dbport = getenv("MYSQL_SERVICE_PORT");
+	$dbuser = getenv("DATABASE_USER");
+	$dbpwd = getenv("DATABASE_PASSWORD");
+	$dbname = getenv("DATABASE_NAME");
+	$connect = mysqli_connect($dbhost, $dbuser, $dbpwd, $dbname) or die("Connection failed");
 
-	$connect = mysqli_connect("localhost", "root", "", "blog") or die("Connection failed");
 
 	if(!$connect){
 		echo '<script language="javascript">';
