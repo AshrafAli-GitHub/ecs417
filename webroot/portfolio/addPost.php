@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 		echo '<script type="text/javascript">';
 		echo 'console.log("Added to SQL")' ;
 		echo '</script>';
-		header("Location: viewBlog.php");
+		//header("Location: viewBlog.php");
 		exit();
 		}
 	}
