@@ -5,8 +5,8 @@
 		<title></title>
 	</head>
 	<body>
-		<form class="testForm" action="index.html" method="post">
-			<button name="button">Test</button>
+		<form class="testForm" method="post">
+			<button type="submit" name="button">Test</button>
 		</form>
 	</body>
 </html>
@@ -27,8 +27,7 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-$sql = "INSERT INTO USERS (firstName, lastName, email, password)
-VALUES ('test', 'test', 'test', 'test')";
+	$sql = "INSERT INTO USERS (firstName, lastName, email, password) VALUES ('test', 'test', 'test', 'test')";
 
 	if ($conn->query($sql) === TRUE) {
 
