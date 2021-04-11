@@ -24,8 +24,11 @@
 
 		$sql = "INSERT INTO blogpost(dt, title, message) VALUES('$dt','$title', '$message')";
 		mysqli_query($connect, $sql);
-
+		echo '<script type="text/javascript">';
+		echo 'alert("a")' ;
+		echo '</script>';
 		header("Location: viewBlog.php");
 		exit();
 	}
 ?>
+
