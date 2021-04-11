@@ -21,7 +21,7 @@
 			$title = $_REQUEST["title"];
 			$message = $_REQUEST["message"];
 
-			$sql = "INSERT INTO blogpost(dt, title, message) VALUES('$dt','$title', '$message')";
+			$sql = 'INSERT INTO blogpost(dt, title, message) VALUES("$dt","$title", "$message")';
 			mysqli_query($connect, $sql);
 			if ($connect->query($sql) === TRUE) {
 				echo '<script type="text/javascript">';
