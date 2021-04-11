@@ -15,19 +15,24 @@
 	}
 
 
-if($_SERVER['REQUEST_METHOD'] == 'GET') {
-	if(isset($_REQUEST["ButtonSubmit"])){
-		$dt = date('Y-m-d H:i:s');
-		$title = $_REQUEST["title"];
-		$message = $_REQUEST["message"];
+	if($_SERVER['REQUEST_METHOD'] == 'GET') {
+		if (isset($_REQUEST["ButtonSubmit"])) {
+			$dt = date('Y-m-d H:i:s');
+			$title = $_REQUEST["title"];
+			$message = $_REQUEST["message"];
 
-		$sql = "INSERT INTO blogpost(dt, title, message) VALUES('$dt','$title', '$message')";
-		mysqli_query($connect, $sql);
-		echo '<script type="text/javascript">';
-		echo 'console.log("Added to SQL")' ;
-		echo '</script>';
-		//header("Location: viewBlog.php");
-		exit();
+			$sql = "INSERT INTO blogpost(dt, title, message) VALUES('$dt','$title', '$message')";
+			mysqli_query($connect, $sql);
+			if ($connect->query($sql) === TRUE) {
+				echo '<script type="text/javascript">';
+				echo 'console.log("Added to SQL")';
+				echo '</script>';
+				//header("Location: viewBlog.php");
+			}
+			else {
+				echo "Error" .$sql . "<br>" . $connect->error;
+			}
+			$connect->close();
 		}
 	}
 ?>
