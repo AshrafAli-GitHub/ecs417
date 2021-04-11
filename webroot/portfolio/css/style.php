@@ -335,6 +335,11 @@ textarea{
 	color: #0888A8;
 }
 
+#message{
+	white-space: pre-line;
+	white-space: pre-wrap;
+}
+
 /* Changes to footer */
 footer{
 		/* padding: 1.2rem; */
