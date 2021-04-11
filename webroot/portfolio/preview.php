@@ -2,7 +2,7 @@
 	<div class="blogEntry">
 		<h2> <a id='close_link' href="javascript:Close()">Close Preview</h2></a>
 		<?php
-		if(isset($_POST)){
+		if(isset($_POST['preview'])){
 			$timeFormatted = date('jS F Y, G:i');
 
 			echo "<h2>". $_POST['title']. "</h2>";
