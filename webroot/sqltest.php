@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<form class="testForm" action="index.html" method="post">
-			<button type="submit" name="button"></button>
+			<button name="button">Test</button>
 		</form>
 	</body>
 </html>
