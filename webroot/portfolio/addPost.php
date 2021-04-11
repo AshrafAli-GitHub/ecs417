@@ -5,7 +5,7 @@
 	$dbhost = getenv("MYSQL_SERVICE_HOST");
 	$dbport = getenv("MYSQL_SERVICE_PORT");
 	$dbuser = getenv("DATABASE_USER");
-	$dbpwd = ("DATABASE_PASSWORD");
+	$dbpwd = getenv("DATABASE_PASSWORD");
 	$dbname = getenv("DATABASE_NAME");
 
 	$connect = mysqli_connect($dbhost, $dbuser, $dbpwd, $dbname) or die("Connection failed");
