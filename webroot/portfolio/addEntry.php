@@ -47,7 +47,7 @@
 					<form name="blogpost" method="post">
 						<input type="text" name="title" class="title" id="title" placeholder="Title">
 						<textarea name="message" id="message" rows="20" cols="80" placeholder="Enter text"></textarea>
-						<button type="submit" name="ButtonSubmit" class="blog_btn" onclick="validateForm(event)">Post</button>
+						<button type="submit" name="ButtonSubmit" value="submit" class="blog_btn" onclick="validateForm(event)">Post</button>
 						<button  name="preview" class="blog_btn" onclick="validatePreview(this.form)">Preview</button>
 						<button  class="blog_btn" onclick="return clearBtn()">Clear</button>
 					</form>
