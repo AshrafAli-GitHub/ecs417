@@ -44,7 +44,7 @@
 				<div class="container">
 					<h1>My Blog</h1>
 					<h2>Add A Blog Post</h2>
-					<form name="blogpost" method="post">
+					<form name="blogpost" method="get">
 						<input type="text" name="title" class="title" id="title" placeholder="Title">
 						<textarea name="message" id="message" rows="20" cols="80" placeholder="Enter text"></textarea>
 						<button type="submit" name="ButtonSubmit" value="submit" class="blog_btn" onclick="validateForm(event)">Post</button>

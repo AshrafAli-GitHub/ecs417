@@ -15,7 +15,7 @@
 	}
 
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+if($_SERVER['REQUEST_METHOD'] == 'GET') {
 	if(isset($_REQUEST["ButtonSubmit"])){
 		$dt = date('Y-m-d H:i:s');
 		$title = $_REQUEST["title"];
@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		echo '<script type="text/javascript">';
 		echo 'console.log("Added to SQL")' ;
 		echo '</script>';
-		header("Location: viewBlog.php");
+		//header("Location: viewBlog.php");
 		exit();
 		}
 	}
