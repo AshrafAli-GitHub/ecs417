@@ -15,24 +15,37 @@
 	}
 
 
-	if($_SERVER['REQUEST_METHOD'] == 'GET') {
+	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		if (isset($_REQUEST["ButtonSubmit"])) {
 			$dt = date('Y-m-d H:i:s');
 			$title = $_REQUEST["title"];
 			$message = $_REQUEST["message"];
 
 			$sql = "INSERT INTO blogpost(dt, title, message) VALUES('$dt','$title', '$message')";
-			mysqli_query($connect, $sql);
+
 			if ($connect->query($sql) === TRUE) {
 				echo '<script type="text/javascript">';
 				echo 'console.log("Added to SQL")';
 				echo '</script>';
-				//header("Location: viewBlog.php");
+				header("Location: viewBlog.php");
 			}
 			else {
 				echo "Error" .$sql . "<br>" . $connect->error;
 			}
 			$connect->close();
+		}
+		if (isset($_REQUEST['preview'])){
+			$timeFormatted = date('jS F Y, G:i');
+			$title = $_POST['title'];
+			$message = $_POST['message'];
+
+			echo "<h2>". $title. "</h2>";
+			echo "<p id='dt'>". $timeFormatted ."</p>";
+			echo "<br>";
+			echo "<br>";
+
+			echo "<p>". $message ."<p>";
+			echo "<hr>";
 		}
 	}
 ?>

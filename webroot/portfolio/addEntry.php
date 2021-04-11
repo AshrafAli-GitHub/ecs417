@@ -44,11 +44,11 @@
 				<div class="container">
 					<h1>My Blog</h1>
 					<h2>Add A Blog Post</h2>
-					<form name="blogpost" method="get">
+					<form name="blogpost" method="post">
 						<input type="text" name="title" class="title" id="title" placeholder="Title">
 						<textarea name="message" id="message" rows="20" cols="80" placeholder="Enter text"></textarea>
 						<button type="submit" name="ButtonSubmit" value="submit" class="blog_btn" onclick="validateForm(event)">Post</button>
-						<button  name="preview" class="blog_btn" onclick="validatePreview(this.form)">Preview</button>
+						<button  name="preview" value="preview" class="blog_btn" onclick="validatePreview(this.form);formPreview(this.form)">Preview</button>
 						<button  class="blog_btn" onclick="return clearBtn()">Clear</button>
 					</form>
 				</div>
@@ -85,10 +85,10 @@
 				document.getElementById("message").style.border = "1px solid red";
 				event.preventDefault();
 			}
-			formPreview(form);
 		}
 
 		function formPreview(form){
+			form.target = '_blank';
 			form.action = 'preview.php'
 			form.submit();
 		}
